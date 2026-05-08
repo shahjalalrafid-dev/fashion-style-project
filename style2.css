@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --primaryfont: "Poppins", sans-serif;
+    --secondaryfont: "Frank Ruhl Libre", serif;
+}
+
+/* Common CSS Start */
+
+a{
+    text-decoration: none;
+}
+ul, ol{
+    list-style: none;
+}
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.box{
+    display: flex;
+}
+
+
+
+
+
+/* Common CSS End  */
+
+
+ /* Collection Part Heading Start  */
+
+ .container h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 64px;
+    font-family: var(--secondaryfont);
+    padding-top: 58px;
+    padding-bottom: 38px;
+ }
+
+ /* Navbar Start */
+
+ .menu{
+    padding-bottom: 151px;
+ }
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+ }
+ul li{
+    padding: 0 60px;
+    font-family: var(--primaryfont);
+    font-size: 24px;
+    font-weight: 600;
+    
+}
+ul li a{
+    color: black;
+}
+.menubar li a{
+    position: relative;
+    
+
+}
+.menubar li a::before{
+    width: 0;
+    height: 2px;
+    position: absolute;
+    content: "";
+    background-color: transparent;
+    left: -50%;
+    top: 100%;
+    transition: .5s;
+
+
+}
+.menubar li a:hover::before{
+    background-color: #302E2E;
+    width: 100%;
+    
+    left: 0;
+
+}
+
+ /* Navbar End */
+
+/* Collection Part Image Gallery Start  */
+
+.image_box{
+    width: 25%;
+}
+.best_seller_image{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 68px;
+    
+}
+.image_box{
+    width: 318px;
+    height: 526px;
+    
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.image_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.overlay1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    opacity: 1;
+    
+    transition: .5s;
+
+}
+.image_box:hover .overlay1{
+    top: 80%;
+    left: 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.overlay1{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.fa-star{
+    font-size: 15px;
+    color: #FFAF37;
+}
+.overlay1 h5{
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+.overlay1 h6{
+    color: #C4C4C4;
+    font-size: 24px;
+    
+    font-weight: 400;
+}
+.price{
+    color: black;
+    margin-left: 57px;
+}
+
+/* Collection Part Image Gallery End  */
+
+/* Collection Part Sub_banner Start */
+
+.sub_banner{
+    padding-top: 150px;
+    
+}
+.sub_banner .box{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    padding-left: 75px;
+    
+    
+}
+.sub_banner h1{
+    text-align: left;
+
+}
+.sub_banner h6{
+    font-family: var(--secondaryfont);
+    font-weight: 700;
+    font-size: 24px;
+    width: 570px;
+    padding-bottom: 70px;
+}
+.sub_banner .container .box{
+    background-color: #FAE3B6;
+    border-radius: 20px;
+}
+.deal_description{
+    width: 50%;
+}
+.deal_image{
+    width: 50%;
+    position: relative;
+    
+}
+.deal_image img{
+    position: absolute;
+    right: 60px;
+    top: 10px;
+}
+
+
+.time{
+    display: flex;
+    column-gap: 27px;
+    
+    
+    
+
+}
+.day{
+    width: 104px;
+    height: 104px;
+    background-color: white;
+    align-content: center;
+    margin-bottom: 93px;
+    
+    
+}
+.day h2{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: var(--primaryfont);
+    text-align: center;
+    line-height: 1.2cm;
+}
+.day p{
+    font-family: var(--primaryfont);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    
+    
+    
+}
+.deal_description a {
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    padding: 25px 91px;
+    
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: .7s;
+    
+   
+}
+.deal_description a:hover{
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+}
+
+
+
+/* Collection Part Sub_banner End */
+
+/* Slideshow Start */
+
+.slideshow{
+    padding-top: 120px;
+}
+.slideshow h1{
+    padding-top: 0px;
+    padding-bottom: 40px;
+}
+.slideshow p{
+    text-align: center;
+    font-family: var(--primaryfont);
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 40px;
+}
+.slideshow .box{
+    column-gap: 70px;
+    flex-wrap: wrap;
+    
+    
+    
+   
+}
+.card{
+    flex: 0 0 20em;
+    width: 50px;
+    height: 330px;
+    background-color: #FEECC8;
+    
+}
+
+
+/* Slideshow End */
+
+
+
+
+
+
+
+
+
+
+
