@@ -12,10 +12,12 @@
     justify-content: center;
     align-items: center;
     
+    
 
 }
 .loginpage{
     display: flex;
+   
 }
 .login_image{
     width: 618px;
@@ -34,3 +36,89 @@
 
     
 }
+
+/* Login Content Design */
+.login_content{
+    width: 822px;
+    height: 1060px;
+    background-color: antiquewhite;
+    justify-items: center;
+    
+}
+.login_content h1{
+    font-size: 64px;
+    font-weight: 700;
+    
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+.login_content p{
+    color: #868686;
+    font-size: 24px;
+    font-weight: 500;
+    
+    margin-bottom: 22px;
+}
+.login_content p span a{
+    color: #F59C15;
+    text-decoration: none;
+}
+.login_content h5{
+    
+    font-size: 24px;
+}
+.divider_parent{
+    position: relative;
+}
+.divider{
+    margin-bottom: 36px;
+}
+.divider::before{
+    content: '';
+    top: 50%;
+    left: 60px;
+    position: absolute;
+    width: 230px;
+    height: 2px;
+    background-color: #C4C4C4;
+}
+.divider::after{
+    content: '';
+    top: 50%;
+    right: 60px;
+    position: absolute;
+    width: 230px;
+    height: 2px;
+    background-color: #C4C4C4;
+}
+.button{
+    display: flex;
+    column-gap: 25px;
+    margin-bottom: 57px;
+}
+.button1 button{
+    background-color: #F4F4F4;
+    color: black;
+    font-size: 22px;
+    width: 304px;
+    height: 61px;
+    border-radius: 20px;
+}
+.button2 button{
+    background-color: #4946E5;
+    color: white;
+    font-size: 22px;
+    width: 304px;
+    height: 61px;
+    border-radius: 20px;
+}
+.fa-facebook{
+    margin-right: 8px;
+}
+.fa-google{
+    margin-right: 8px;
+}
+
+
+
+    
