@@ -1,0 +1,36 @@
+
+/* Login Page Design CSS Start */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: "Frank Ruhl Libre", serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.loginpage{
+    display: flex;
+}
+.login_image{
+    width: 618px;
+    height: 1060px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+    overflow: hidden;
+}
+.login_image img{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+
+    
+}
