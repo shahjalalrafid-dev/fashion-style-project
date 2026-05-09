@@ -6,6 +6,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
@@ -31,23 +32,32 @@
                                 <button type="submit"><i class="fa-brands fa-facebook"></i>Sign up with Facebook</button>
                             </div>
                         </div>
-                        <div>
-                            <label for="full_name">Full Name</label>
-                            <input type="text" id="full_name" name="full_name" placeholder="e.g. Md Shahjalal Rafid" autocomplete="name">
+                        <div class="label">
+                            <label for="name">Full Name</label>
                         </div>
-                        <div>
+                        <div class="input">
+                            <input type="text" name="full_name">
+                        </div>
+                        <div class="label">
+                            
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="Type your email" autocomplete="email">
+
                         </div>
-                        <div>
+                            
+                        <div class="input">
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="label">
                             <label for="password">Password</label>
-                            <input type="password" id="password" placeholder="Type your password">
                         </div>
-                        <div>
+                        <div class="input">
+                            <input type="password" id="password">
+                        </div>
+                        <div class="checkbox">
                             <input type="checkbox" id="agree" name="agree" value="yes">
-                            <label for="agree">I agree to all the <span>Terms</span>, and <span>Privacy Policy</span> and <span>Fees</span></label>
+                            <label for="agree">I agree to all the <span class="style">Terms</span>, and <span class="style">Privacy Policy</span> and <span class="style">Fees</span></label>
                         </div>
-                        <div>
+                        <div class="button3">
                             <button type="submit">Create Account</button>
                         </div>
                         
@@ -55,6 +65,7 @@
                         
                     </div>
                     <div class="login_image">
+                        <h3 class="logo">Fresh</h3>
                         <img src="./image/login_image.png" alt="image">
                     </div>
                 </div>
